@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>숙제</title>
+    <link rel="stylesheet" href="./ex1.css">
   </head>
   <body>
     <div class="contetnsWrap">
       <div class="cL">
         <div class="movieChart">
           <h2>
-            무비차트<b>상영예정작</b>
-            <a href="#">전체보기</a>
+            무비차트 &nbsp; <strong>|</strong> &nbsp;<b>상영예정작</b>
+            <a href="#">전체보기 > </a>
           </h2>
           <ul>
             <script>
@@ -27,10 +28,23 @@
                   <img src="./img/egg.png" alt="에그이미지">
                   <i class="percent">96</i>%
                 </span>
+                &nbsp;&nbsp;<b>|</b>&nbsp;&nbsp;
                 <span class="reserRate">예매율 44.6%</span>
               </p>
             </li>`
-            document.write(list1)
+            for (var i = 0; i < 5; i++) {
+              document.write(list1)
+            }
+
+            var movieList = [
+              { name : "아바타-물의 길", img:"./img/86072_320.jpg", rate:"예매율 44.6%"},
+              { name : "방탄소년단 옛 투 컴", img:"./img/86729_320.jpg", rate:"예매율 12.1%"},
+              { name : "더 퍼스트 슬램덩크", img:"./img/86720_320.jpg", rate:"예매율 12.1%"},
+              { name : "교섭", img:"./img/86157_320.jpg", rate:"예매율 15.9%"},
+              { name : "유령", img:"./img/86719_320.jpg", rate:"예매율 19.8%"},
+            ];
+
+
             </script>
           </ul>
         </div>
